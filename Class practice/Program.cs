@@ -38,58 +38,55 @@ namespace Class_practice
             }
 
 
-            //Console.WriteLine(" MENU ");
-            ////Console.Clear();
-            //Console.WriteLine("Secim edin:");
-            //Console.WriteLine("1.Kitablari qiymete gore filtrle");
-            //Console.WriteLine("2.Butun kitablari goster");
-            //Console.WriteLine("3.Proqram baglansin");
-            //Console.Write("\r\nSelect an option: ");
+            Console.WriteLine(" MENU ");
+            Console.Clear();
+            Console.WriteLine("Secim edin:");
+            Console.WriteLine("1.Kitablari qiymete gore filtrle");
+            Console.WriteLine("2.Butun kitablari goster");
+            Console.WriteLine("0.Proqram baglansin");
+            Console.Write("\r\nSelect an option: ");
 
-            //switch (Console.ReadLine())
-            //{
-            //    case "1":
-            //        Console.WriteLine(""); 
-            //        break;
-            //    case "2":
-            //        ;
-            //        break;
-            //    case "3":
-            //        break;
-            //    default:
-            //        break;
-            //}
-            int selection = 0;
-            do
+            switch (Console.ReadLine())
             {
-                Console.WriteLine("1.Kitablari qiymete gore filtrle");
-                Console.WriteLine("2.Butun kitablari goster");
-                Console.WriteLine("0.Proqrami bagla");
-                int say = GetInputInt("Say?", 0);
-                Console.ReadLine();
+                case "1":
+                    Console.WriteLine("");
+                    break;
+                case "2":
+                    ;
+                    break;
+                case "0":
+                    break;
+                default:
+                    break;
+            }
+            //int selection = 0;
+            //do
+            //{
+            //    Console.WriteLine("1.Kitablari qiymete gore filtrle");
+            //    Console.WriteLine("2.Butun kitablari goster");
+            //    Console.WriteLine("0.Proqrami bagla");
+            //    int say = GetInputInt("Say?", 0);
+            //    Console.ReadLine();
 
-                switch (selection)
-                {
-                    case 1:
-                        
+            //    switch (selection)
+            //    {
+            //        case 1:
+            //            Console.WriteLine($"Filtrle");
+            //            break;
 
-                        Console.WriteLine($"");
-                        break;
+            //        case 2:
+            //            Console.WriteLine($"Butun melumatlari goster:");
 
-                    case 2:
-                        Console.WriteLine($"Butun melumatlari goster:");
-                        
+            //            break;
 
-                        break;
-
-                    case 3:
-                    default:
-                        Console.WriteLine("Proqram baglansin");
-                        break;
-                }
+            //        case 3:
+            //        default:
+            //            Console.WriteLine("Proqram baglansin");
+            //            break;
+            //    }
 
 
-            } while (selection != 3);
+            //} while (selection != 3);
 
         }
         static double GetInputDouble(string name, double min, double max = double.MaxValue)

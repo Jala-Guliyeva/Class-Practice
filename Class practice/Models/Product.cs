@@ -18,13 +18,13 @@ namespace Class_practice.Models
             this.price = price;
         }
 
-        public Product(string name,int no,double price, int count)
-        {
-            this.name = name;
-            this.no = no;
-            this.price = price;
-            this.count = count;
-        }
+        //public Product(string name,int no,double price, int count)
+        //{
+        //    this.name = name;
+        //    this.no = no;
+        //    this.price = price;
+        //    this.count = count;
+        //}
         
     }
 }
